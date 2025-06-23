@@ -133,9 +133,20 @@ Se realizaron análisis gráficos y estadísticos, incluyendo:
 
 ## Conclusiones del análisis exploratorio
 
-- La captura presenta marcada estacionalidad con meses pico.  
-- La veda reduce el volumen capturado, evidenciando la efectividad regulatoria.  
-- El esfuerzo pesquero y la temperatura superficial influyen en la cantidad capturada, mostrando correlaciones a considerar en el modelado.
+1. Captura total de centolla por año:
+El gráfico evidencia que los años 2020 y 2021 tuvieron volúmenes de captura de centolla muy superiores al resto del periodo. En particular, 2020 muestra el mayor registro. Para 2024 solo se observa una captura marginal, y no hay datos para los años 2022 y 2023. Esto puede reflejar cambios en la actividad pesquera, periodos de veda más prolongados, una baja real en la abundancia, cambios de política de manejo, o incluso faltantes en el registro de datos para esos años.
+
+2. Captura promedio mensual de centolla:
+La estacionalidad es clara: los mayores volúmenes promedio se registran en los meses de octubre, noviembre y diciembre, con un pico especialmente alto en noviembre. Esto sugiere que la actividad pesquera de centolla en Punta Arenas se concentra en los últimos meses del año, probablemente después de la veda biológica y coincidiendo con la temporada habilitada de captura.
+
+3. Horas de pesca vs. volumen capturado:
+El gráfico de dispersión sugiere una relación positiva entre el esfuerzo (horas de pesca) y el volumen capturado, aunque la dispersión indica que no siempre un mayor esfuerzo implica mayor captura. Existen puntos con muchas horas de pesca y volúmenes bajos, y viceversa, lo que podría deberse a variaciones en la abundancia de centolla, condiciones climáticas, o eficiencia de la flota.
+
+4. Temperatura superficial promedio vs. volumen capturado:
+No se observa una tendencia clara entre la temperatura del mar y el volumen capturado de centolla. Los puntos están dispersos en todo el rango de temperatura, lo que sugiere que la temperatura superficial promedio no es el principal factor explicativo de las fluctuaciones en el volumen de captura para este periodo y región, o bien que su efecto podría ser indirecto o estar enmascarado por otros factores (como esfuerzo pesquero o regulaciones).
+
+Estos resultados sugieren que la captura de centolla en Punta Arenas tiene una marcada estacionalidad y una fuerte variabilidad interanual. El esfuerzo pesquero tiene cierta relación con el volumen capturado, pero otros factores (regulaciones, clima, dinámica poblacional) probablemente también juegan un papel relevante.
+Será útil profundizar en análisis de regresión o modelos predictivos para comprender mejor las relaciones entre las variables y evaluar el impacto de la veda y las regulaciones sobre la sostenibilidad de la pesquería.
 
 ---
 
