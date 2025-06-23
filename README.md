@@ -132,8 +132,7 @@ Se realizaron análisis gráficos y estadísticos, incluyendo:
 ---
 
 ## Conclusiones del análisis exploratorio
-
-▓▓▓ ANÁLISIS EXPLORATORIO DE DATOS: CONCLUSIONES ▓▓▓
+🔬 ANÁLISIS EXPLORATORIO DE DATOS | CONCLUSIONES EJECUTIVAS
 🔬 Análisis Predictivo de Volumen de Captura | Lithodes santolla | Tierra del Fuego
 bash═══════════════════════════════════════════════════════════════
  DATASET: Registro de Capturas Pesqueras  
@@ -209,19 +208,9 @@ resultado = "No significativa" if p_valor > 0.05 else "Significativa"
 TIPODESCRIPCIÓNPROBABILIDADDIRECTATemperatura como predictor primarioBAJAINDIRECTAEfectos mediados por variables latentesALTATEMPORALEfectos con lag temporal no capturadosMEDIA
 
 ⚡ SÍNTESIS EJECUTIVA: HALLAZGOS CLAVE
-🎚️ RANKING DE IMPORTANCIA DE VARIABLES
-css╔══════════════════════════════════════════════════════════════╗
-║                    FEATURE IMPORTANCE                        ║
-╠══════════════════════════════════════════════════════════════╣
-║ Variable                 │ Poder Pred. │ Sig. Est. │ Impacto ║
-║────────────────────────────────────────────────────────────  ║
-║ Estacionalidad Temporal  │    ALTO     │ p<0.001  │ CRÍTICO ║
-║ Variabilidad Interanual  │    ALTO     │ p<0.01   │   ALTO  ║  
-║ Esfuerzo Pesquero       │   MEDIO     │ p<0.05   │  MEDIO  ║
-║ Temperatura Superficial │    BAJO     │ p>0.05   │   BAJO  ║
-╚══════════════════════════════════════════════════════════════╝
-🚀 PIPELINE DE RECOMENDACIONES ALGORÍTMICAS
-ACCIONES INMEDIATAS
+🎯 RANKING DE IMPORTANCIA DE VARIABLES
+VARIABLEPODER PREDICTIVOSIGNIFICANCIAIMPACTOPRIORIDADEstacionalidad Temporal████████████ ALTOp < 0.001🔴 CRÍTICO#1Variabilidad Interanual██████████░░ ALTOp < 0.01🟠 ALTO#2Esfuerzo Pesquero██████░░░░░░ MEDIOp < 0.05🟡 MEDIO#3Temperatura Superficial███░░░░░░░░░ BAJOp > 0.05🟢 BAJO#4
+🚀 RECOMENDACIONES ALGORÍTMICAS
 pythondef siguiente_pipeline_analisis():
     modelos_recomendados = [
         'regresion_multivariada()',
@@ -230,21 +219,6 @@ pythondef siguiente_pipeline_analisis():
         'modelado_sostenibilidad()'
     ]
     return execute_pipeline(modelos_recomendados)
-ANALÍTICA AVANZADA
-bash┌─ FASE 1: ANÁLISIS CUANTITATIVO
-│  ├── Regresión Multiple: Cuantificación de relaciones
-│  ├── Modelos Predictivos: Algoritmos de forecasting
-│  └── Análisis de Series: Patrones temporales complejos
-│
-├─ FASE 2: EVALUACIÓN DE IMPACTO  
-│  ├── Assessment Regulatorio: Evaluación cuantitativa
-│  ├── Métricas de Sostenibilidad: Indicadores KPI
-│  └── Análisis de Políticas: Impacto de regulaciones
-│
-└─ FASE 3: EXPANSIÓN DE VARIABLES
-   ├── Factores Ambientales: Variables oceanográficas
-   ├── Datos Socioeconómicos: Variables de mercado
-   └── Machine Learning: Algoritmos de predicción avanzados
 
 🎯 CONCLUSIÓN FINAL
 diff+ PATRÓN ESTACIONAL: Robustez estadística confirmada en Q4
@@ -252,10 +226,7 @@ diff+ PATRÓN ESTACIONAL: Robustez estadística confirmada en Q4
 + FACTORES REGULATORIOS: Emergen como variables de control críticas
 - VARIABLES AMBIENTALES: Requieren análisis más profundo para causalidad
 ! GAPS DE DATOS: Críticos para robustez del modelo (2022-2023)
-
-🔄 NEXT ITERATION:
-Implementación de modelos predictivos avanzados para optimización de estrategias de captura sostenible
-STATUS: READY FOR ADVANCED MODELING ████████████████████ 100%
+STATUS: ANÁLISIS COMPLETADO ████████████████████ 100%
 
 Estos resultados sugieren que la captura de centolla en Punta Arenas tiene una marcada estacionalidad y una fuerte variabilidad interanual. El esfuerzo pesquero tiene cierta relación con el volumen capturado, pero otros factores (regulaciones, clima, dinámica poblacional) probablemente también juegan un papel relevante.
 Será útil profundizar en análisis de regresión o modelos predictivos para comprender mejor las relaciones entre las variables y evaluar el impacto de la veda y las regulaciones sobre la sostenibilidad de la pesquería.
