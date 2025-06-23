@@ -127,7 +127,7 @@ Se realizaron análisis gráficos y estadísticos, incluyendo:
 - Relación entre esfuerzo pesquero, temperatura y volumen capturado.  
 - Impacto de la veda en los volúmenes de pesca.
 
-![graficos](img/grafico.png)
+![graficos](img/graficofin.png)
 
 ---
 
