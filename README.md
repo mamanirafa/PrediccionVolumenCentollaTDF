@@ -28,33 +28,17 @@
 - **Profesor:** Martín Mirabete
 
 ---
----
 
-## 📑 Índice
+![Índice futurista](img/indice.png)
 
-- [🔍 Resumen](#-resumen)  
-- [🎬 Objetivo General](#-ObjetivoGeneral)  
-- [⚙️ Objetivos Específicos](#-ObjetivosEspecíficos)  
-- [🚀 Contexto y Relevancia](#-Contexto)  
-- [🛠 Origen y Descripción de los datos](#-Origen)  
-- [🤝 Contribuir](#-contribuir)  
-- [📂 Estructura](#-estructura)  
-- [📄 Licencia](#-licencia)  
-
----
-<div style="background-color: #0a0e1a; color: #00ffff; font-family: 'Orbitron', sans-serif; padding: 2rem; border-radius: 12px;">
-  <h2 style="color: #1e90ff;">⧉ Índice</h2>
-  <ul style="list-style: none; padding-left: 0;">
-    <li>🧠 <a href="#resumen" style="color: #00ffff;">Resumen</a></li>
-    <li>🎯 <a href="#objetivo-general" style="color: #00ffff;">Objetivo General</a></li>
-    <li>📌 <a href="#objetivos-especificos" style="color: #00ffff;">Objetivos Específicos</a></li>
-    <li>🌐 <a href="#contexto-y-relevancia" style="color: #00ffff;">Contexto y Relevancia</a></li>
-    <li>📊 <a href="#origen-y-descripcion-de-los-datos" style="color: #00ffff;">Origen y Descripción de los Datos</a></li>
-    <li>🤝 <a href="#contribuir" style="color: #00ffff;">Contribuir</a></li>
-    <li>🗂️ <a href="#estructura-del-repositorio" style="color: #00ffff;">Estructura del Repositorio</a></li>
-    <li>⚖ <a href="#licencia" style="color: #00ffff;">Licencia</a></li>
-  </ul>
-</div>
+### Accesos rápidos:
+- [Resumen](#resumen)
+- [Objetivo General](#objetivo-general)
+- [Objetivos Específicos](#objetivos-específicos)
+- [Contexto y Relevancia](#contexto-y-relevancia)
+- [Origen y Descripción de los Datos](#origen-y-descripción-de-los-datos)
+- [Estructura del Repositorio](#estructura-del-repositorio)
+- [Licencia](#licencia)
 ---
 Predicción de Producción Sostenible de Trucha en TDF mediante Modelos de Aprendizaje Automático
 ==============================
