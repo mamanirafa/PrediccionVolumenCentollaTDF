@@ -5,17 +5,6 @@
   </p>
 </p>
 
-<!-- Badges -->
-<p align="center">
-  <a href="https://github.com/mamanirafa/Testing/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/mamanirafa/Testing/ci.yml" alt="Build Status"/>
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/mamanirafa/Testing" alt="License"/>
-  </a>
-</p>
-
----
 ---
 
 **Carrera:** Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial  
@@ -30,16 +19,18 @@
 ---
 ##  Indice
 ### Accesos rápidos:
-- [Resumen](#resumen)
-- [Objetivo General](#objetivo-general)
-- [Objetivos Específicos](#objetivos-específicos)
-- [Contexto y Relevancia](#contexto-y-relevancia)
-- [Origen y Descripción de los Datos](#origen-y-descripción-de-los-datos)
-- [Estructura del Repositorio](#estructura-del-repositorio)
-- [Licencia](#licencia)
+- [1.- Resumen](#resumen)
+- [2.- Objetivo General](#objetivo-general)
+- [3.- Objetivos Específicos](#objetivos-específicos)
+- [4.- Contexto y Relevancia](#contexto-y-relevancia)
+- [5.- Origen y Descripción de los Datos](#origen-y-descripción-de-los-datos)
+- [6.- Análisis exploratori de datoso](#analisisexpl)
+- [7.- Modelo de Aprendizaje Automático](ModeloAutomático)
+- [8.- Evaluación del modelo](Evaluacion)
+- [9.- Interpretación y conclusiones finales](Interprertacion)
+- [10.- Estructura del Repositorio](#estructura-del-repositorio)
+
 ---
-Predicción de Producción Sostenible de Trucha en TDF mediante Modelos de Aprendizaje Automático
-==============================
 # Descripción del Proyecto
 ##  Resumen
 
@@ -119,7 +110,7 @@ en aplicar regresión a datos específicos de centolla en una región remota, ge
 ---
 ---
 
-## Análisis exploratorio de datos
+## Análisis exploratori de datoso
 
 Se realizaron análisis gráficos y estadísticos, incluyendo:
 
