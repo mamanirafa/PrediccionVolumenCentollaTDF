@@ -43,7 +43,7 @@
 Predicción de Producción Sostenible de Trucha en TDF mediante Modelos de Aprendizaje Automático
 ==============================
 # Descripción del Proyecto
-## 🔍 Resumen
+##  Resumen
 
 Este proyecto de aprendizaje automático busca predecir el volumen sostenible de capturas de centolla (Lithodes
 santolla) por año en Tierra del Fuego, utilizando un modelo de regresión implementado en Python con scikitlearn. El dataset principal, “Pesca y Puertos Pesqueros” del Ministerio de Economía, contiene datos históricos
@@ -54,7 +54,7 @@ modelo no realiza un análisis estadístico, sino que aprende patrones de los da
 
 ---
 
-## 🎬 Objetivo General
+##  Objetivo General
 Desarrollar un modelo de regresión que prediga el volumen sostenible de capturas de centolla (en toneladas)
 por año en Tierra del Fuego, basado en variables como esfuerzo pesquero, condiciones ambientales y
 regulaciones, para apoyar la gestión pesquera sostenible.
@@ -63,7 +63,7 @@ regulaciones, para apoyar la gestión pesquera sostenible.
 
 ---
 
-## ⚙️ Objetivos Específicos
+##  Objetivos Específicos
 1. Preprocesar el dataset para filtrar datos de Tierra del Fuego y centolla, asegurando patrones claros para
 el aprendizaje del modelo.
 2. Implementar un modelo de regresión (Random Forest Regressor o Linear Regression) para predecir el
@@ -73,7 +73,7 @@ volumen sostenible.
 
 ---
 
-## 🚀 Contexto y Relevancia
+##  Contexto y Relevancia
 Tierra del Fuego,depende de la pesca de centolla como pilar económico en puertos como Ushuaia y Río Grande.
 La sobreexplotación y el cambio climático amenazan este recurso, mientras que el aislamiento geográfico
 complica la logística. La certificación MSC de la pesquería de centolla resalta la importancia de la sostenibilidad
@@ -83,7 +83,7 @@ en aplicar regresión a datos específicos de centolla en una región remota, ge
 
 ---
 
-## 🛠 Origen y Descripción de los datos
+##  Origen y Descripción de los datos
 
 ### Origen del Dataset
 
