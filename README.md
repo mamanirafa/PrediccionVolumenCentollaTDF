@@ -132,102 +132,91 @@ Se realizaron análisis gráficos y estadísticos, incluyendo:
 ---
 
 ## Conclusiones del análisis exploratorio
-🔬 ANÁLISIS EXPLORATORIO DE DATOS | CONCLUSIONES EJECUTIVAS
-🔬 Análisis Predictivo de Volumen de Captura | Lithodes santolla | Tierra del Fuego
-bash═══════════════════════════════════════════════════════════════
- DATASET: Registro de Capturas Pesqueras  
- PERÍODO: 2020-2024 | REGIÓN: Punta Arenas
- ESTADO: ████████████████████████████ 100% COMPLETADO
-═══════════════════════════════════════════════════════════════
+**FACTORES POSITIVOS:**
+- Modificaciones en marco regulatorio pesquero
+- Extensión de períodos de veda biológica
+- Fluctuaciones naturales en biomasa poblacional
 
-🎯 MÓDULO 01 → ANÁLISIS TEMPORAL: CAPTURA ANUAL
-📊 PATRÓN DETECTADO: Discontinuidad temporal significativa
-python# Años de máxima actividad pesquera
-años_pico = [2020, 2021]     # Volúmenes superiores al promedio base
-brecha_datos = [2022, 2023]  # Ausencia de datos críticos  
-estado_actual = 2024         # Captura marginal detectada
+**FACTORES DE RIESGO:**
+- Inconsistencias en sistema de registro de datos
+---
+### PATRÓN DETECTADO: Estacionalidad pronunciada
 
-⚠️ VARIABLES EXPLICATIVAS IDENTIFICADAS
-diff+ Modificaciones en marco regulatorio pesquero
-+ Extensión de períodos de veda biológica
-+ Fluctuaciones naturales en biomasa poblacional
-! Inconsistencias en sistema de registro de datos
-- Factores socio-económicos externos (COVID-19)
-
-
-🎯 MÓDULO 02 → ANÁLISIS ESTACIONAL: DISTRIBUCIÓN MENSUAL
-📈 PATRÓN DETECTADO: Estacionalidad pronunciada
-sql-- Consulta de distribución estacional
+```sql
+-- Consulta de distribución estacional
 SELECT mes, PROMEDIO(volumen_captura) 
 FROM datos_pesca 
 WHERE mes IN ('Octubre', 'Noviembre', 'Diciembre')
 ORDER BY volumen_captura DESC;
 
 -- RESULTADO: Noviembre > Diciembre > Octubre
-🔥 INSIGHT CLAVE: Concentración en Q4
-MESVOLUMEN RELATIVOSIGNIFICANCIANoviembre████████████████████ 100%PICO ABSOLUTODiciembre████████████████░░░░ 85%ALTAOctubre██████████████░░░░░░ 70%MODERADA
-CORRELACIÓN IDENTIFICADA: Sincronización perfecta con ventanas regulatorias post-veda
+```
 
-🎯 MÓDULO 03 → ANÁLISIS DE CORRELACIÓN: ESFUERZO vs RENDIMIENTO
-⚡ MODELO: Análisis de Relación Esfuerzo-Rendimiento
-r# Análisis de correlación avanzado
+### INSIGHT CLAVE: Concentración en Q4
+
+| MES | VOLUMEN RELATIVO | SIGNIFICANCIA |
+|-----|------------------|---------------|
+| **Noviembre** | 100% | **PICO ABSOLUTO** |
+| **Diciembre** | 85% | **ALTA** |
+| **Octubre** | 70% | **MODERADA** |
+
+**CORRELACIÓN IDENTIFICADA:** Sincronización perfecta con ventanas regulatorias post-veda
+
+---
+### MODELO: Análisis de Relación Esfuerzo-Rendimiento
+
+```r
+# Análisis de correlación avanzado
 coeficiente_correlacion <- cor(horas_pesca, volumen_captura)
 modelo_regresion <- lm(volumen ~ esfuerzo + factores_ambientales)
 
 # R² moderado con alta dispersión residual detectada
-📐 HALLAZGOS ESTADÍSTICOS
-yamlCORRELACIÓN_POSITIVA: 
-  tendencia: "esfuerzo_mayor → captura_mayor"
-  intensidad: "moderada"
-  
-ALTA_VARIANZA:
-  dispersión: "significativa"
-  outliers: "detectados"
-  
-CASOS_ATÍPICOS:
-  - alto_esfuerzo_baja_captura: "identificados"
-  - bajo_esfuerzo_alta_captura: "documentados"
-🔍 FACTORES DE VARIABILIDAD IDENTIFICADOS
-mermaidgraph TD
-    A[Esfuerzo Pesquero] --> B{Volumen Capturado}
-    C[Abundancia Espacial] --> B
-    D[Condiciones Oceanográficas] --> B
-    E[Eficiencia de Flota] --> B
-    F[Factores Estocásticos] --> B
+```
 
-🎯 MÓDULO 04 → ANÁLISIS MULTIVARIADO: TEMPERATURA vs CAPTURA
-🌡️ RESULTADO: Relación estadísticamente no significativa
-python# Test de significancia estadística
-import scipy.stats as stats
+### HALLAZGOS ESTADÍSTICOS
 
-p_valor = stats.pearsonr(temperatura_superficial, volumen_captura)[1]
-resultado = "No significativa" if p_valor > 0.05 else "Significativa"
+**CORRELACIÓN POSITIVA:**
+- **Tendencia:** "esfuerzo_mayor → captura_mayor"
+- **Intensidad:** "moderada"
 
-# OUTPUT: p > 0.05 → No rechazar H₀ (independencia)
-🧮 INTERPRETACIONES ALGORÍTMICAS
-TIPODESCRIPCIÓNPROBABILIDADDIRECTATemperatura como predictor primarioBAJAINDIRECTAEfectos mediados por variables latentesALTATEMPORALEfectos con lag temporal no capturadosMEDIA
+**ALTA VARIANZA:**
+- **Dispersión:** "significativa"
+- **Outliers:** "detectados"
 
-⚡ SÍNTESIS EJECUTIVA: HALLAZGOS CLAVE
-🎯 RANKING DE IMPORTANCIA DE VARIABLES
-VARIABLEPODER PREDICTIVOSIGNIFICANCIAIMPACTOPRIORIDADEstacionalidad Temporal████████████ ALTOp < 0.001🔴 CRÍTICO#1Variabilidad Interanual██████████░░ ALTOp < 0.01🟠 ALTO#2Esfuerzo Pesquero██████░░░░░░ MEDIOp < 0.05🟡 MEDIO#3Temperatura Superficial███░░░░░░░░░ BAJOp > 0.05🟢 BAJO#4
-🚀 RECOMENDACIONES ALGORÍTMICAS
-pythondef siguiente_pipeline_analisis():
-    modelos_recomendados = [
-        'regresion_multivariada()',
-        'series_temporales_predictivas()', 
-        'evaluacion_impacto_politicas()',
-        'modelado_sostenibilidad()'
-    ]
-    return execute_pipeline(modelos_recomendados)
+**CASOS ATÍPICOS:**
+- Alto esfuerzo / Baja captura: "identificados"
+- Bajo esfuerzo / Alta captura: "documentados"
 
-🎯 CONCLUSIÓN FINAL
-diff+ PATRÓN ESTACIONAL: Robustez estadística confirmada en Q4
-+ VARIABILIDAD INTERANUAL: Alta significancia como driver principal  
-+ FACTORES REGULATORIOS: Emergen como variables de control críticas
-- VARIABLES AMBIENTALES: Requieren análisis más profundo para causalidad
-! GAPS DE DATOS: Críticos para robustez del modelo (2022-2023)
-STATUS: ANÁLISIS COMPLETADO ████████████████████ 100%
+### FACTORES DE VARIABILIDAD IDENTIFICADOS
 
+- Esfuerzo Pesquero
+- Abundancia Espacial
+- Condiciones Oceanográficas
+- Eficiencia de Flota
+- Factores Estocásticos
+
+---
+
+ANÁLISIS MULTIVARIADO: TEMPERATURA vs CAPTURA
+
+### RESULTADO: Relación estadísticamente no significativa
+| TIPO | DESCRIPCIÓN | PROBABILIDAD |
+|------|-------------|--------------|
+| **DIRECTA** | Temperatura como predictor primario | **BAJA** |
+| **INDIRECTA** | Efectos mediados por variables latentes | **ALTA** |
+| **TEMPORAL** | Efectos con lag temporal no capturados | **MEDIA** |
+
+---
+### RANKING DE IMPORTANCIA DE VARIABLES
+
+| VARIABLE | PODER PREDICTIVO | SIGNIFICANCIA | IMPACTO | PRIORIDAD |
+|:---------|:----------------:|:-------------:|:-------:|:---------:|
+| **Estacionalidad Temporal** | **ALTO** | `p < 0.001` | **CRÍTICO** | **#1** |
+| **Variabilidad Interanual** | **ALTO** | `p < 0.01` | **ALTO** | **#2** |
+| **Esfuerzo Pesquero** | **MEDIO** | `p < 0.05` | **MEDIO** | **#3** |
+| **Temperatura Superficial** | **BAJO** | `p > 0.05` | **BAJO** | **#4** |
+
+---
 Estos resultados sugieren que la captura de centolla en Punta Arenas tiene una marcada estacionalidad y una fuerte variabilidad interanual. El esfuerzo pesquero tiene cierta relación con el volumen capturado, pero otros factores (regulaciones, clima, dinámica poblacional) probablemente también juegan un papel relevante.
 Será útil profundizar en análisis de regresión o modelos predictivos para comprender mejor las relaciones entre las variables y evaluar el impacto de la veda y las regulaciones sobre la sostenibilidad de la pesquería.
 
@@ -255,17 +244,28 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 
 ## Interpretación y conclusiones finales
 
-- El modelo Random Forest mostró un desempeño superior, capturando con precisión la variabilidad en los datos.  
-- El modelo puede servir como herramienta predictiva para apoyar la toma de decisiones en la gestión pesquera.  
-- Limitaciones incluyen la cantidad y calidad de datos, así como posibles variables no consideradas.
-
 ---
 
-## Recomendaciones
+## Conclusión final del proyecto
 
-- Ampliar el dataset con más variables ambientales y biológicas.  
-- Probar otros modelos y técnicas avanzadas de machine learning.  
-- Implementar monitoreo continuo para actualizar el modelo periódicamente.
+- Se integraron y procesaron datos de captura de centolla, esfuerzo pesquero, temperatura superficial y regulación de veda, siguiendo el estándar profesional de proyectos de ciencia de datos.
+- Se probaron modelos de regresión lineal y Random Forest para predecir el volumen mensual de captura.
+
+### Resultados
+- La regresión lineal explicó solo una pequeña parte de la variabilidad (R2 ≈ 0.11), pero mostró un comportamiento más estable.
+- El Random Forest, en la evaluación tradicional (train/test), mostró un ajuste casi perfecto (R2 ≈ 1), pero la validación cruzada reveló un **sobreajuste extremo** (R2 promedio ≈ -11.8), señalando que no puede generalizar a datos realmente nuevos.
+- El análisis de importancia de variables sugiere que ciertas variables tienen más influencia, lo que puede guiar la toma de decisiones y la recolección de futuros datos.
+
+### Recomendaciones 
+- **La validación cruzada es fundamental**: sólo confiar en los resultados de un único test puede llevar a conclusiones erróneas.
+- **Los modelos complejos requieren más datos y cuidado**: El sobreajuste es un riesgo serio en datasets pequeños.
+- Es recomendable:
+  - Recolectar más datos (más años, otras zonas, variables biológicas o económicas).
+  - Probar técnicas de regularización y modelos más simples como benchmark.
+  - Utilizar el análisis de importancia de variables para enfocar la gestión pesquera y futuras investigaciones.
+
+
+Este proyecto es una base sólida para el análisis de series temporales en recursos pesqueros, pero también muestra los límites de la predicción automática cuando los datos son escasos. La ciencia de datos responsable debe reportar tanto los aciertos como las limitaciones para que la toma de decisiones sea robusta y basada en evidencia.
 
 ---
 
@@ -274,8 +274,8 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 - Notebooks: Exploración, análisis, modelado y depuración.  
 - Dataset procesado (`dataset_modelado_final.csv`).  
 - Gráficos y reportes generados.  
-- Documentos descriptivos y presentación ejecutiva.
-
+- Documento descriptivos
+- Video Explicativo
 ---
 
 ---
