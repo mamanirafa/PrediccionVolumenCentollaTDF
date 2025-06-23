@@ -28,9 +28,7 @@
 - **Profesor:** Martín Mirabete
 
 ---
-
-![Índice futurista](img/indice.png)
-
+##  Indice
 ### Accesos rápidos:
 - [Resumen](#resumen)
 - [Objetivo General](#objetivo-general)
