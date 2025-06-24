@@ -15,6 +15,9 @@
 
 - **Alumno:** MAMANI, Rafael
 - **Profesor:** Martín Mirabete
+---
+
+[🎬 Ver video explicativo del proyecto](videos/explicacion.mp4)
 
 ---
 ##  Indice
