@@ -17,7 +17,7 @@
 - **Profesor:** Martín Mirabete
 ---
 
-[🎬 Ver video explicativo del proyecto](videos/explicacion.mp4)
+[🎬 Ver video explicativo del proyecto](videos/VideoPrediccionCapturaCentollaTDF.mp4)
 
 ---
 ##  Indice
