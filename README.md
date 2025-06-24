@@ -32,7 +32,7 @@
 
 ---
 # Descripción del Proyecto
-##  Resumen
+##  1. Resumen
 
 Este proyecto de aprendizaje automático busca predecir el volumen sostenible de capturas de centolla (Lithodes
 santolla) por año en Tierra del Fuego, utilizando un modelo de regresión implementado en Python con scikitlearn. El dataset principal, “Pesca y Puertos Pesqueros” del Ministerio de Economía, contiene datos históricos
@@ -43,7 +43,7 @@ modelo no realiza un análisis estadístico, sino que aprende patrones de los da
 
 ---
 
-##  Objetivo General
+##  2. Objetivo General
 Desarrollar un modelo de regresión que prediga el volumen sostenible de capturas de centolla (en toneladas)
 por año en Tierra del Fuego, basado en variables como esfuerzo pesquero, condiciones ambientales y
 regulaciones, para apoyar la gestión pesquera sostenible.
@@ -52,7 +52,7 @@ regulaciones, para apoyar la gestión pesquera sostenible.
 
 ---
 
-##  Objetivos Específicos
+##  3. Objetivos Específicos
 1. Preprocesar el dataset para filtrar datos de Tierra del Fuego y centolla, asegurando patrones claros para
 el aprendizaje del modelo.
 2. Implementar un modelo de regresión (Random Forest Regressor o Linear Regression) para predecir el
@@ -62,7 +62,7 @@ volumen sostenible.
 
 ---
 
-##  Contexto y Relevancia
+##  4. Contexto y Relevancia
 Tierra del Fuego,depende de la pesca de centolla como pilar económico en puertos como Ushuaia y Río Grande.
 La sobreexplotación y el cambio climático amenazan este recurso, mientras que el aislamiento geográfico
 complica la logística. La certificación MSC de la pesquería de centolla resalta la importancia de la sostenibilidad
@@ -74,7 +74,7 @@ en aplicar regresión a datos específicos de centolla en una región remota, ge
 
 ##  Origen y Descripción de los datos
 
-### Origen del Dataset
+### 5. Origen del Dataset
 
 *   **Instituto Nacional de Estadísticas (INE) Chile**, Global Fishing Watch, y fuentes oficiales de regulación pesquera.
 *   **Fecha de Adquisición:** Junio de 2025.
@@ -110,7 +110,7 @@ en aplicar regresión a datos específicos de centolla en una región remota, ge
 ---
 ---
 
-## Análisis exploratori de datoso
+## 6. Análisis exploratori de datoso
 
 Se realizaron análisis gráficos y estadísticos, incluyendo:
 
@@ -213,7 +213,7 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 
 ---
 
-## Modelo de Aprendizaje Automático
+## 7. Modelo de Aprendizaje Automático
 
 - Algoritmos utilizados: Regresión Lineal y Random Forest Regressor.  
 - Variables predictoras: Esfuerzo pesquero, temperatura, indicadores de veda, y datos temporales.  
@@ -221,7 +221,7 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 
 ---
 
-## Evaluación del modelo
+## 8. Evaluación del modelo
 
 | Métrica               | Regresión Lineal | Random Forest |
 |-----------------------|------------------|---------------|
@@ -229,7 +229,7 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 | MSE (Error cuadrático) | 102.44           | 0.18          |
 | R² (Determinación)     | 0.11             | 1.00          |
 
-*(Incluir gráficos de predicción vs real para ambos modelos)*
+![graficos](img/comparacion.png)
 
 ---
 
