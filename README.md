@@ -27,8 +27,8 @@
 - [6.- Análisis exploratorio de datos](#6-análisis-exploratori-de-datoso)
 - [7.- Modelo de Aprendizaje Automático](#7-modelo-de-aprendizaje-automático)
 - [8.- Evaluación del modelo](#8-evaluación-del-modelo)
-- [9.- Interpretación y conclusiones finales](#interpretación-y-conclusiones-finales)
-- [10.- Estructura del Repositorio](#entregables-en-el-repositorio)
+- [9.- Interpretación y conclusiones finales](#9-interpretacion-y-conclusiones-finales)
+- [10.- Entregables en el repositorio](#10-entregables-en-el-repositorio)
 
 ---
 # Descripción del Proyecto
@@ -41,7 +41,7 @@ un repositorio Git para garantizar reproducibilidad, con resultados documentados
 modelo no realiza un análisis estadístico, sino que aprende patrones de los datos para generar predicciones
 útiles para simulaciones y toma de decisiones en la gestión pesquera.
 
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -51,7 +51,7 @@ por año en Tierra del Fuego, basado en variables como esfuerzo pesquero, condic
 regulaciones, para apoyar la gestión pesquera sostenible.
 
 ![Ejemplo de uso](img/objetivofin.png)
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -62,7 +62,7 @@ el aprendizaje del modelo.
 volumen sostenible.
 3. Modelo con métricas como MSE, MAE y R², validando su capacidad para aprender patrones predictivos.
 4. Generar simulaciones de volúmenes sostenibles para recomendar cuotas de pesca optimizadas.
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -73,7 +73,7 @@ complica la logística. La certificación MSC de la pesquería de centolla resal
 por lo que predecir volúmenes sostenibles es relevante para: (1) proteger la biodiversidad marina, (2) sostener
 la economía local, (3) informar cuotas de pesca, y (4) adaptarse a cambios ambientales. La originalidad radica
 en aplicar regresión a datos específicos de centolla en una región remota, generando simulaciones prácticas.
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -111,7 +111,7 @@ en aplicar regresión a datos específicos de centolla en una región remota, ge
 *   **Datos Preliminares:** Los datos se encuentran sujetos a posibles actualizaciones y correcciones posteriores a procesos de limpieza y validación.
 *   **Valores Faltantes:** Existen registros con datos ausentes o nulos en algunas variables, particularmente en el esfuerzo pesquero y temperatura, que fueron tratados durante la limpieza.
 *   **Consistencia:** Se aplicaron procesos de depuración para homogeneizar nombres de especies, formatos de fecha y codificación de variables categóricas.
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -215,7 +215,7 @@ ANÁLISIS MULTIVARIADO: TEMPERATURA vs CAPTURA
 ---
 Estos resultados sugieren que la captura de centolla en Punta Arenas tiene una marcada estacionalidad y una fuerte variabilidad interanual. El esfuerzo pesquero tiene cierta relación con el volumen capturado, pero otros factores (regulaciones, clima, dinámica poblacional) probablemente también juegan un papel relevante.
 Será útil profundizar en análisis de regresión o modelos predictivos para comprender mejor las relaciones entre las variables y evaluar el impacto de la veda y las regulaciones sobre la sostenibilidad de la pesquería.
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -224,7 +224,7 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 - Algoritmos utilizados: Regresión Lineal y Random Forest Regressor.  
 - Variables predictoras: Esfuerzo pesquero, temperatura, indicadores de veda, y datos temporales.  
 - Se aplicaron técnicas de limpieza, normalización y validación cruzada para garantizar robustez.
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -237,7 +237,7 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 | R² (Determinación)     | 0.11             | 1.00          |
 
 ![graficos](img/comparacion.png)
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -265,7 +265,7 @@ Será útil profundizar en análisis de regresión o modelos predictivos para co
 
 
 Este proyecto es una base sólida para el análisis de series temporales en recursos pesqueros, pero también muestra los límites de la predicción automática cuando los datos son escasos. La ciencia de datos responsable debe reportar tanto los aciertos como las limitaciones para que la toma de decisiones sea robusta y basada en evidencia.
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 ---
 
@@ -276,7 +276,7 @@ Este proyecto es una base sólida para el análisis de series temporales en recu
 - Gráficos y reportes generados.  
 - Documento descriptivos
 - Video Explicativo
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#indice)
 
 
 ---
@@ -328,5 +328,5 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
-[🔝 Volver al Índice](#índice)
+[🔝 Volver al Índice](#Volver-al-Indice)
 --------
